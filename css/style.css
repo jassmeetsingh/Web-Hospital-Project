@@ -1,0 +1,377 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Main Page*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5e90af;
+}
+
+nav li {
+    float: left;
+    cursor: pointer;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+nav li a:hover:not(.active) {
+    background-color: white;
+    color: rgb(6, 18, 22);
+}
+
+.signup a,
+.profile a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile {
+    float: right;
+}
+
+.active {
+    background-color: white;
+    color: rgb(6, 18, 22) !important;
+}
+
+.profile i {
+    padding-right: 10px;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.banner .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner .text .btn,
+.btn {
+    text-decoration: none;
+    background-color: #5e90af;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner .text .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 18, 22);
+}
+
+.products {
+    display: block;
+    margin: 40px;
+    margin-bottom: 100px;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+.cat-pro {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
+}
+
+.categories h3 {
+    padding: 10px 5px;
+    background-color: #5e90af;
+    color: white;
+}
+
+.categories ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.categories ul li {
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.categories ul li i {
+    margin-right: 10px;
+}
+
+.categories ul li:hover {
+    background-color: #5e90af;
+    color: white;
+}
+
+.cat-products .prod-header {
+    display: inline;
+}
+
+.cat-products h3 {
+    padding: 10px 5px;
+    padding-right: 100px;
+    background-color: #5e90af;
+    color: white;
+}
+
+.inner-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.inner-products div {
+    padding: 20px;
+    border: 0.2px solid rgb(201, 201, 201);
+}
+
+.inner-products div h5 {
+    height: 30px;
+}
+
+.inner-products div h4 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.cart-btn {
+    padding: 10px 10px;
+    width: 150px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    background-color: #5e90af;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-btn i {
+    margin-right: 5px;
+}
+
+.cart-btn:hover {
+    background-color: tomato;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #5e90af;
+    color: white;
+    padding: 15px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin: 10px 0;
+    padding: 7px 10px;
+}
+
+.search-btn {
+    padding: 10px 10px;
+    width: 90px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    background-color: #5e90af;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-btn:hover {
+    background-color: tomato;
+}
+
+
+/* Login Page */
+
+.login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #5e90af;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.login h2 {
+    color: white;
+}
+
+.login #login_username,
+#login_password {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: .3px solid gray;
+    outline: none;
+}
+
+#btn_login {
+    padding: 10px 10px;
+    width: 150px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+    color: #5e90af;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#btn_login:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Signup Page */
+
+.signup,
+.update-profile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #5e90af;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.signup h2,
+.update-profile h2 {
+    color: white;
+}
+
+#signup_username,
+#signup_password,
+#signup_name,
+#signup_cpassword,
+#profile_username,
+#profile_password,
+#profile_name,
+#profile_cpassword {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: .3px solid gray;
+    outline: none;
+}
+
+#btn_signup,
+#btn_profile {
+    padding: 10px 10px;
+    width: 150px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    background-color: #ffffff;
+    color: #5e90af;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#btn_signup:hover,
+#btn_profile:hover {
+    background-color: tomato;
+    color: white;
+}
+
+#cart {
+    display: none;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.cart-item {
+    border: 2px solid #5e90af;
+    margin: 20px 50px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.btn,
+#checkout {
+    border: none !important;
+    outline: none !important;
+}
+
+.all {
+    display: none;
+}
+
+#cats {
+    display: none;
+}
+
+footer {
+    position: fixed;
+}
+
+footer i {
+    font-size: 40px;
+}
+
+.fa-facebook-square:hover {
+    font-size: 60px;
+    color: #4267B2;
+}
+
+.fa-twitter-square:hover {
+    font-size: 60px;
+    color: #1DA1F2;
+}
+
+.fa-linkedin:hover {
+    font-size: 60px;
+    color: #1DA1F2;
+}
