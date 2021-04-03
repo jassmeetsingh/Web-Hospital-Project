@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="store"><a class="active">Store</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li id="cartbtn"><a>Cart</a></li>
+            <li class="profile"><a href="profile.html"><i class="fas fa-user"></i>Customer Name</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div class="text">
+            <h1>Welcome to our store</h1>
+            <a href="#categories" class="btn">Buy Now</a>
+        </div>
+    </div>
+    <div class="products">
+        <div class="heading">
+            <h1>Our Products</h1>
+        </div>
+        <div class="cat-pro">
+            <aside class="categories" id="categories">
+
+                <ul id="cats">
+                    <h3>Categories</h3>
+                    <li id="all"><i class="fas fa-cog"></i>All Categories</li>
+                    <li id="cpr"><i class="fas fa-cog"></i>CPR MANIKING</li>
+                    <li id="elec"><i class="fas fa-cog"></i>ELECTROMEDICAL</li>
+                    <li id="phy"><i class="fas fa-cog"></i>PHYSIOTHERAPY</li>
+                    <li id="fur"><i class="fas fa-cog"></i>HOSPITAL FURNITURE</li>
+                    <li id="str"><i class="fas fa-cog"></i>STRECHER SERIES</li>
+                </ul>
+            </aside>
+            <main class="cat-products">
+                <div class="prod-header">
+                    <h3>All Products</h3>
+                    <input type="text" class="search-bar" id="search-bar" placeholder="Search Keywords">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="inner-products">
+                    <div class="cpr all">
+                        <img src="img/cpr/cpr1.jpg" alt="CRP1">
+                        <h5>PRESTAN PROFESSIONAL AED TRAINER</h5>
+                        <h4>$300</h4>
+                        <button class="cart-btn" value="cpr1"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="cpr all">
+                        <img src="img/cpr/cpr2.jpg" alt="CRP2">
+                        <h5>RED CROSS AED TRAINER</h5>
+                        <h4>$200</h4>
+                        <button class="cart-btn" value="cpr2"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="elec all">
+                        <img src="img/cpr/crp3.jpg" alt="CRP3">
+                        <h5>ADULT FEMALE PELVIS</h5>
+                        <h4>$30</h4>
+                        <button class="cart-btn" value="elec1"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="phy all">
+                        <img src="img/electromedical/em1.jpg" alt="EM1">
+                        <h5>AMBULATORY BP MONITOR</h5>
+                        <h4>$310</h4>
+                        <button class="cart-btn" value="phy1"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="fur all">
+                        <img src="img/electromedical/em2.jpg" alt="EM2">
+                        <h5>ANESTHESIA MACHINE - GE 800 PLUS</h5>
+                        <h4>$1000</h4>
+                        <button class="cart-btn" value="fur1"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="str all">
+                        <img src="img/electromedical/em3.jpg" alt="EM3">
+                        <h5>ANESTHESIA MACHINE - SOFT LANDER SL-210i</h5>
+                        <h4>$500</h4>
+                        <button class="cart-btn" value="str1"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="phy all">
+                        <img src="img/electromedical/phy1.jpg" alt="EM1">
+                        <h5>FETAL MONITOR - BISTOS BT-300</h5>
+                        <h4>$310</h4>
+                        <button class="cart-btn" value="phy2"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="fur all">
+                        <img src="img/electromedical/fur1.jpg" alt="EM2">
+                        <h5>FETAL MONITOR - BISTOS BT-350</h5>
+                        <h4>$1000</h4>
+                        <button class="cart-btn" value="fur2"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                    <div class="str all">
+                        <img src="img/electromedical/str1.jpg" alt="EM3">
+                        <h5>FETAL MONITOR - MEDIANA FM-20</h5>
+                        <h4>$500</h4>
+                        <button class="cart-btn" value="str2"><i class="fas fa-cart-plus"></i> Add To Cart</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <h1 style="display: block; text-align: center;">Cart</h1>
+        <div class="in-cart">
+
+        </div>
+        <div style="display: block; text-align: center;">
+            <button id="checkout" class="btn">Check out</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <span>
+                <i class="fab fa-facebook-square"></i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin"></i>
+            </span>
+        </div>
+        &copy;All Right Reserved
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.all').slideDown(1000);
+            $('#cats').slideDown(1000);
+        })
+        $('#all').click(function() {
+            $('.all').slideDown(1000);
+        })
+        $('#cpr').click(function() {
+            $('.all').slideUp(1000);
+            $('.cpr').slideDown(1000);
+        })
+        $('#elec').click(function() {
+            $('.all').slideUp(1000);
+            $('.elec').slideDown(1000);
+        })
+        $('#phy').click(function() {
+            $('.all').slideUp(1000);
+            $('.phy').slideDown(1000);
+        })
+        $('#fur').click(function() {
+            $('.all').slideUp(1000);
+            $('.fur').slideDown(1000);
+        })
+        $('#str').click(function() {
+            $('.all').slideUp(1000);
+            $('.str').slideDown(1000);
+        })
+        $('#cartbtn').click(function() {
+            $('.products').slideUp(1000);
+            $('#cart').slideDown(1000);
+        })
+        $('#store').click(function() {
+            $('.products').css("display", "grid");
+            $('#cart').css("display", "none");
+        })
+        var bill = 0;
+        $('.cart-btn').click(function() {
+            var type = $(this).val();
+
+            if (type == "cpr1") {
+                bill = bill + 300;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p1" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/cpr/cpr1.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$300</p>
+                </div>
+                <div> <button class='btn delete' value="d1">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "cpr2") {
+                bill = bill + 200;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p2"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/cpr/cpr2.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$200</p>
+                </div>
+                <div> <button class='btn delete' value="d2">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "elec1") {
+                bill = bill + 30;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p3"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/cpr/crp3.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$30</p>
+                </div>
+                <div> <button class='btn delete'  value="d3">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "phy1") {
+                bill = bill + 310;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item  p4"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/electromedical/em1.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$310</p>
+                </div>
+                <div> <button class='btn delete'  value="d4">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "fur1") {
+                bill = bill + 1000;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p5"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/electromedical/em2.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$1000</p>
+                </div>
+                <div> <button class='btn delete'  value="d5">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "str1") {
+                bill = bill + 500;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p6"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/electromedical/em3.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$500</p>
+                </div>
+                <div> <button class='btn delete'  value="d6">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "phy2") {
+                bill = bill + 310;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item  p4"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/electromedical/phy1.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$310</p>
+                </div>
+                <div> <button class='btn delete'  value="d4">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "fur2") {
+                bill = bill + 1000;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p5"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/electromedical/fur1.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$1000</p>
+                </div>
+                <div> <button class='btn delete'  value="d5">Delete</button></div>
+            </div>
+					`)
+            } else if (type == "str2") {
+                bill = bill + 500;
+                alert("Added to cart");
+                $(".in-cart").append(`
+						
+                            <div class="cart-item p6"  style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                <div><img src="img/electromedical/str1.jpg" alt="" style="width: 100px;height: 100px; "></div>
+                <div>
+                    <p>$500</p>
+                </div>
+                <div> <button class='btn delete'  value="d6">Delete</button></div>
+            </div>
+					`)
+            }
+
+        })
+        $('#checkout').click(function() {
+            alert("Bill Payed of " + bill);
+            $(".in-cart").html('');
+            bill = 0;
+        })
+        $('.delete').click(function() {
+            var dtype = $(this).val();
+            if (dtype == 'd1') {
+                bill = bill - 300;
+                $('.p1').slideUp('500');
+            } else if (dtype == 'd2') {
+                bill = bill - 200;
+                $('.p2').slideUp('500');
+            } else if (dtype == 'd3') {
+                bill = bill - 30;
+                $('.p3').slideUp('500');
+            } else if (dtype == 'd4') {
+                bill = bill - 310;
+                $('.p4').slideUp('500');
+            } else if (dtype == 'd5') {
+                bill = bill - 1000;
+                $('.p5').slideUp('500');
+            } else if (dtype == 'd6') {
+                bill = bill - 500;
+                $('.p6').slideUp('500');
+            }
+        })
+    </script>
+</body>
+
+</html>
